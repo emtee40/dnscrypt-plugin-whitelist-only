@@ -531,7 +531,7 @@ log_blocked_rr(const Passing * const passing,
     ltsv_prop(passing->fp, "qname", passing);
     fprintf(passing->fp, "%s\t", blocked_question);
     ltsv_prop(passing->fp, "message", passing);
-    fprintf(passing->fp, "not whitelisted\n", rule);
+    fprintf(passing->fp, "not whitelisted\n");
     fflush(passing->fp);
 
     return 0;
